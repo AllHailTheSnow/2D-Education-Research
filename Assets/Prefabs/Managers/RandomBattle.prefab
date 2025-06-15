@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7535463320499647105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8690131868323354576}
+  - component: {fileID: 6824826823005687909}
+  - component: {fileID: 7978114170397992961}
+  m_Layer: 0
+  m_Name: RandomBattle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8690131868323354576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535463320499647105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5655024, y: 0.2989202, z: 18.688835}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6824826823005687909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535463320499647105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c687f473f5499c4ba2ba3ca0485deea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Bee
+    - Bee
+    - Bee
+    rewardExp: 100
+    rewardItems:
+    - Potion
+    - Potion
+  - enemies:
+    - Snake
+    - Snake
+    rewardExp: 80
+    rewardItems:
+    - Ether
+    - Potion
+  - enemies:
+    - Bee
+    - Snake
+    rewardExp: 90
+    rewardItems:
+    - Leather Armour
+    - Potion
+  - enemies:
+    - Orc
+    - Snake
+    rewardExp: 110
+    rewardItems:
+    - Potion
+  - enemies:
+    - Deer
+    rewardExp: 100
+    rewardItems:
+    - Potion
+    - Potion
+    - Potion
+  - enemies:
+    - Bee
+    - Orc
+    rewardExp: 110
+    rewardItems:
+    - Ether
+    - Ether
+  - enemies:
+    - Orc
+    rewardExp: 90
+    rewardItems:
+    - Leather Armour
+  - enemies:
+    - Bee
+    rewardExp: 50
+    rewardItems: []
+  - enemies:
+    - Snake
+    rewardExp: 40
+    rewardItems: []
+  - enemies:
+    - Snake
+    - Snake
+    - Snake
+    rewardExp: 140
+    rewardItems:
+    - Potion
+    - Potion
+    - Ether
+  - enemies:
+    - Bee
+    - Bee
+    - Bee
+    rewardExp: 120
+    rewardItems:
+    - Potion
+    - Ether
+    - Ether
+  - enemies:
+    - Deer
+    - Deer
+    rewardExp: 200
+    rewardItems:
+    - Steel Sword
+    - Potion
+    - Ether
+  battleBG: {fileID: 2519611956109933777, guid: 1e88b6cd422462f448a1eaa7e0864acb, type: 3}
+  battleTrack: 6
+  activateOnEnter: 0
+  activateOnStay: 0
+  activateOnExit: 0
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  timeBetweenBattles: 5
+  shouldCompleteQuest: 0
+  questToComplete: 
+--- !u!58 &7978114170397992961
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535463320499647105}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 15
